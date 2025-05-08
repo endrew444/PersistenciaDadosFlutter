@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
-  void mudarDarkMode() async {
+  void _mudarDarkMode() async {
     setState(() {
       _darkMode = !_darkMode;
     });
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
         body: Center(
           child: Switch(
             value: _darkMode,
-            onChanged: (value) => (mudarDarkMode()),
+            onChanged: (value) => (_mudarDarkMode()),
           ),
         ),
       ),
